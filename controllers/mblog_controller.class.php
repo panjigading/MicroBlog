@@ -22,7 +22,7 @@ class MBlog_Controller extends Controller
     public function edit() {
         $mblogModel = $this->loadModel("mblog_model");
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
-            $mblogModel->update($_POST["id"], $_POST["text"]);
+            $mblogModel->update($_POST["id"], nl2br($_POST["text"]));
             header("Location: index.php");
         } else {
             $res = $mblogModel->getByID($_GET["id"])->fetch_object();
