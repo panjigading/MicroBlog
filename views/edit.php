@@ -1,5 +1,6 @@
 <?php
 
+$title = "Edit";
 require_once("views/header.php");
 
 echo '<h1>Microblog</h1>';
