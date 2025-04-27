@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    max-width: 80ch;
+    padding: 1rem;
+    margin: 0 auto;
+    border: 1px solid grey;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: .5rem 1rem;
+    border-radius: 5%;
+    display: block;
+    width: fit-content;
+    border: none;
+    font: inherit;
+}
+
+.mblog {
+    border-top: 1px solid grey;
+    margin-top: 1rem;
+}
+
+.username {
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+form {
+    display: grid;
+    gap: 0.5rem;
+}
+
+textarea {
+    height: 15rem;
+    padding: .5rem;
+    font: inherit;
+}
+
+.status {
+    padding: .5rem 0;
+    font-style: italic;
+}
